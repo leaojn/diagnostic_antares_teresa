@@ -216,7 +216,7 @@ const QuizWizard = () => {
               {step === 0 && (
                 <>
                   <QuizField label="Nome da empresa" required error={errors.empresa}>
-                    <QuizInput value={data.empresa} onChange={(e) => set("empresa", e.target.value)} placeholder="Ex: Distribuidora ABC" hasError={!!errors.empresa} />
+                    <QuizInput value={data.empresa} onChange={(e) => set("empresa", e.target.value)} placeholder="EX: Empresa ABC" hasError={!!errors.empresa} />
                   </QuizField>
                   <QuizField label="Seu nome" required error={errors.nome}>
                     <QuizInput value={data.nome} onChange={(e) => set("nome", e.target.value)} placeholder="Seu nome completo" hasError={!!errors.nome} />
@@ -238,7 +238,7 @@ const QuizWizard = () => {
                     />
                   </QuizField>
                   <QuizField label="Segmento">
-                    <QuizInput value={data.segmento} onChange={(e) => set("segmento", e.target.value)} placeholder="Ex: Alimentício" />
+                    <QuizInput value={data.segmento} onChange={(e) => set("segmento", e.target.value)} placeholder="Ex: Construção, Comércio, etc." />
                   </QuizField>
                   <QuizField label="Cidade/Estado">
                     <QuizInput value={data.cidadeEstado} onChange={(e) => set("cidadeEstado", e.target.value)} placeholder="Ex: Teresina/PI" />
